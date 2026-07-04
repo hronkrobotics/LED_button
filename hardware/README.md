@@ -14,6 +14,25 @@ This folder stores the physical design assets for the LED button controller.
 
 The hardware revision documented here is a modular prototype platform. It prioritizes flexibility, serviceability, and rapid iteration over production optimization. The design intentionally uses an ESP32 development board, an external battery shield, and JST-XH wiring to simplify debugging and part replacement.
 
+## Hardware Architecture
+
+```mermaid
+flowchart LR
+    A[Battery pack] --> B[Battery shield / charger]
+    B --> C[Power distribution]
+    C --> D[ESP32 controller]
+    C --> E[OLED display]
+    C --> F[LED matrix]
+    C --> G[Input buttons]
+    C --> H[Buzzer]
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+```
+
+This layout is chosen because it keeps the device portable and easy to service while still making the PCB the main integration point for the system. The split between modular subsystems and the custom PCB allows future revisions to improve manufacturing density without discarding the existing functional architecture.
+
 ## Included Files
 
 - [pcb/LED_Button_PCB_Schematic.pdf](pcb/LED_Button_PCB_Schematic.pdf)

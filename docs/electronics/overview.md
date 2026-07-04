@@ -1,5 +1,36 @@
 # Electronics Overview
 
+## Hardware Architecture
+
+The hardware is organized as a modular embedded system where power, sensing, actuation, and user interface functions are split into distinct blocks that connect through the custom PCB and JST-XH wiring.
+
+```mermaid
+flowchart LR
+    A[2x 18650 cells] --> B[Battery shield / charger]
+    B --> C[Regulated 5V rail]
+    C --> D[ESP32-WROOM-32]
+    C --> E[SH1106 OLED display]
+    C --> F[8x8 LED matrix]
+    C --> G[Cherry MX buttons]
+    C --> H[Auxiliary buttons]
+    C --> I[Passive buzzer]
+    D --> E
+    D --> F
+    D --> G
+    D --> H
+    D --> I
+    D --> J[Custom PCB + JST-XH connectors]
+```
+
+### Why These Design Choices Work
+
+The hardware architecture favors rapid iteration and serviceability over maximum miniaturization:
+
+- The ESP32 and battery shield are used as modular building blocks so the prototype can be reworked quickly.
+- JST-XH connectors simplify assembly, debugging, and replacement of displays, LEDs, buttons, and power connections.
+- The custom PCB centralizes the wiring and keeps the prototype easier to manufacture and test than a loose breadboard layout.
+- The separate battery pack and charging path make the device portable without forcing the electronics to be permanently sealed into the enclosure.
+
 ## Main Components
 
 ### ESP32-WROOM-32

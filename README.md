@@ -8,19 +8,13 @@ The firmware in this repository remains the primary functional layer. This repos
 
 ## Demonstration Videos
 
-These clips show the two core interaction modes of the LED button project:
+These lightweight GIF previews show the two core interaction modes of the LED button project. The original MOV files are preserved in [media/led-button-timer.mov](media/led-button-timer.mov) and [media/led-button-interface.mov](media/led-button-interface.mov).
 
 ### Timer mode
-<video controls preload="metadata" width="100%" playsinline>
-  <source src="media/led-button-timer.mov" type="video/quicktime" />
-  Your browser does not support the video tag.
-</video>
+<img src="media/led-button-timer.gif" alt="LED button timer mode demo" width="100%" />
 
 ### Button mode
-<video controls preload="metadata" width="100%" playsinline>
-  <source src="media/led-button-interface.mov" type="video/quicktime" />
-  Your browser does not support the video tag.
-</video>
+<img src="media/led-button-interface.gif" alt="LED button interface mode demo" width="100%" />
 
 ## Features
 

@@ -8,6 +8,23 @@ The firmware in this repository provides the functional behavior of the handheld
 
 The firmware is a single-sketch, state-driven embedded application for the ESP32. Rather than using a full RTOS, it follows a lightweight cooperative loop in which the main program repeatedly reads input, updates game state, and refreshes the output devices. This keeps the implementation simple and easy to debug while still supporting the current timer and reaction-game behavior.
 
+```mermaid
+flowchart TD
+    A[Input: control button + corner buttons] --> B[Debounce and decode]
+    B --> C[State machine]
+    C --> D[Timer mode subsystem]
+    C --> E[Wack mode subsystem]
+    D --> F[LED matrix renderer]
+    E --> F
+    D --> G[OLED UI updates]
+    E --> G
+    D --> H[Audio feedback]
+    E --> H
+    F --> I[User-visible output]
+    G --> I
+    H --> I
+```
+
 ### Execution Model
 
 The program is structured around a very simple control flow:
@@ -89,6 +106,15 @@ This structure keeps the firmware easy to follow and makes it straightforward to
 ### Design Notes
 
 The current firmware prioritizes simplicity and clarity over modularity. That makes it ideal as a preserved prototype and a good base for future work. The main tradeoff is that most of the behavior remains centralized in one sketch file, so adding more advanced features such as Wi-Fi, BLE, or multi-device networking will benefit from breaking the logic into smaller modules.
+
+### Why These Design Choices Work
+
+The current architecture is intentionally straightforward:
+
+- A cooperative main loop keeps the firmware deterministic and easy to follow for a prototype.
+- A small state machine makes the timer and wack interactions explicit instead of scattering logic across the sketch.
+- The LED matrix rendering layer isolates the physical panel mapping so the gameplay code can stay focused on behavior rather than pixel numbering.
+- Direct GPIO-based input with debounce keeps the Bill of Materials and wiring simple while still being reliable enough for the current use case.
 
 ### Future Architectural Direction
 
