@@ -66,5 +66,6 @@ This project is released under the MIT License. See [LICENSE](LICENSE) for detai
 - Firmware and prototype development: HRONK Robotics
 - Hardware documentation and repository organization: HRONK Robotics
 - Mechanical and electronic design references: included project files in this repository
+- Wall-mount accessory reference: [hardware/cad/LED_BUTTON_VEX_WALL_MOUNT_3D_FILES.step](hardware/cad/LED_BUTTON_VEX_WALL_MOUNT_3D_FILES.step)
 
 <!-- Add CAD renders, exploded views, and photographs here later -->
