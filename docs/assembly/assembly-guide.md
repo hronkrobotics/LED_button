@@ -2,7 +2,7 @@
 
 ## Prototype Assembly Overview
 
-This guide describes the modular prototype assembly approach for the LED button controller.
+This guide combines the mechanical and assembly workflow for the LED button controller into a single build document. It is intended for the modular prototype build and covers enclosure assembly, PCB installation, wiring, and final verification.
 
 ## Mechanical Assembly
 
@@ -37,4 +37,4 @@ This guide describes the modular prototype assembly approach for the LED button 
 - USB charging works
 - External power switch functions
 
-<!-- Add exploded-view notes or photographs later -->
+<!-- Add exploded-view notes, photographs, or a single consolidated build sequence later -->
