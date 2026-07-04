@@ -37,6 +37,14 @@ The current firmware uses the following general pin allocation:
 - Buttons use input pull-up logic and debouncing.
 - Audio feedback is implemented through simple tone output.
 
+## Planned UI and Connectivity Enhancements
+
+The next firmware iteration may add:
+
+- Wi-Fi connectivity for configuration and telemetry
+- BLE support for pairing with mobile devices
+- Multi-button serial connection for coordinating multiple units
+
 ## Build and Flash
 
 The main firmware source is [../../firmware/LED_button.ino](../../firmware/LED_button.ino).

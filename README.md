@@ -6,7 +6,21 @@ This repository documents a modular ESP32-based LED button controller designed f
 
 The firmware in this repository remains the primary functional layer. This repository now adds the engineering documentation, mechanical references, PCB files, manufacturing notes, and assembly guidance required to build, service, and improve the hardware.
 
-<!-- Insert project photo or render here -->
+## Demonstration Videos
+
+These clips show the two core interaction modes of the LED button project:
+
+### Timer mode
+<video controls preload="metadata" width="100%" playsinline>
+  <source src="media/led-button-timer.mov" type="video/quicktime" />
+  Your browser does not support the video tag.
+</video>
+
+### Button mode
+<video controls preload="metadata" width="100%" playsinline>
+  <source src="media/led-button-interface.mov" type="video/quicktime" />
+  Your browser does not support the video tag.
+</video>
 
 ## Features
 
@@ -19,6 +33,14 @@ The firmware in this repository remains the primary functional layer. This repos
 - Dual 18650 battery system with external charging module
 - Modular JST-XH connector architecture for easy assembly and replacement
 - Firmware support for timer and reaction-style game modes
+
+## Future UI and Connectivity Enhancements
+
+Planned improvements for the next hardware and firmware iteration include:
+
+- Wi-Fi connectivity for configuration, telemetry, and remote updates
+- BLE support for phone or tablet pairing and control
+- Multi-button serial connection for linking multiple units into a shared interactive setup
 
 ## Hardware Specifications
 
