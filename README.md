@@ -1,4 +1,4 @@
-# HRONK Robotics LED Button
+# LED Button
 
 ## Project Overview
 
