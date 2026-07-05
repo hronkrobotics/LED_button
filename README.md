@@ -12,12 +12,14 @@ These square-cropped demo clips are embedded directly in the README so they can 
 
 ### Timer mode
 <video controls preload="metadata" width="100%" playsinline>
-  <source src="media/led-button-timer-square.mp4" type="video/mp4" />
+  <source src="https://raw.githubusercontent.com/hronkrobotics/LED_button/main/media/led-button-timer-square.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
 </video>
 
 ### Button mode
 <video controls preload="metadata" width="100%" playsinline>
-  <source src="media/led-button-interface-square.mp4" type="video/mp4" />
+  <source src="https://raw.githubusercontent.com/hronkrobotics/LED_button/main/media/led-button-interface-square.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
 </video>
 
 ## Features
