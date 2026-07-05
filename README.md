@@ -8,7 +8,17 @@ The firmware in this repository remains the primary functional layer. This repos
 
 ## Demonstration Videos
 
-The original demo recordings are preserved in [media/led-button-timer.mov](media/led-button-timer.mov) and [media/led-button-interface.mov](media/led-button-interface.mov).
+These square-cropped demo clips are embedded directly in the README so they can play in the browser. The original source recordings are also preserved in [media/led-button-timer.mov](media/led-button-timer.mov) and [media/led-button-interface.mov](media/led-button-interface.mov).
+
+### Timer mode
+<video controls preload="metadata" width="100%" playsinline>
+  <source src="media/led-button-timer-square.mp4" type="video/mp4" />
+</video>
+
+### Button mode
+<video controls preload="metadata" width="100%" playsinline>
+  <source src="media/led-button-interface-square.mp4" type="video/mp4" />
+</video>
 
 ## Features
 
