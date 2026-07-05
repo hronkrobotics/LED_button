@@ -6,6 +6,8 @@ This repository documents a modular ESP32-based LED button controller designed f
 
 The firmware in this repository remains the primary functional layer. This repository now adds the engineering documentation, mechanical references, PCB files, manufacturing notes, and assembly guidance required to build, service, and improve the hardware.
 
+This platform is currently being used primarily as a VEX IQ STEM education curriculum asset, where it serves as an engaging hands-on tool for teaching timing, reaction, and interactive electronics concepts. It is also designed to be expandable into many other use cases, including outreach demonstrations, classroom competitions, prototyping platforms, and future connected or networked interactive systems.
+
 ## Demonstration Videos
 
 These square-cropped demo clips are embedded directly in the README so they can play in the browser. The original source recordings are also preserved in [media/led-button-timer.mov](media/led-button-timer.mov) and [media/led-button-interface.mov](media/led-button-interface.mov).
